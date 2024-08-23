@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li>
+          <div class="add-students">
+            <button class="button-add-student">Add Student</button>
+          </div>
+        </li>
+        <li>
+          <div class="table-student">
+            <button id="btn-data-student">student data</button>
+          </div>
+        </li>
+        <li>
+          <div class="search-student-with-name">
+            <input
+              type="text"
+              id="searchstudent"
+              placeholder="Enter student name"
+            />
+            <button id="btn-search">Search</button>
+          </div>
+        </li>
+      </ul>
+      <div class="information-student">
+        <h1>Information Student</h1>
+        <input type="text" placeholder="Name" id="name" />
+        <input type="number" placeholder="Age" id="age" />
+        <input type="text" id="src-image" placeholder="Image URL" />
+        <button id="btn-save-student">Save Student</button>
+      </div>
+
+      <div id="slider">
+        <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <div class="card-list"></div>
+        <!-- pins -->
+        <div class="pins-student">
+          <form id="pinForm">
+            <label for="students">select student :</label>
+            <select id="students"></select>
+            <div class="pens-check">
+              <input type="radio" id="blue" name="pins" value="blue" />
+              <label for="blue">blue</label>
+              <input type="radio" id="red" name="pins" value="red" />
+              <label for="red">red</label>
+            </div>
+            <button id="sub">give pin</button>
+          </form>
+        </div>
+        <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    <!--                                   -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
