@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+    min-height: 100vh;
+    background-color: rgb(114, 189, 238);
+}
+
+.card-list {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: flex-start; 
+    gap: 20px;
+    align-items: center;
+
+   
+}
+
+.card-list .card-item {
+    width: 360px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: solid 2px rgba(255, 255, 255, 0.409);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    padding: 5px;
+}
+
+.card-list .card-item .user-text {
+    font-size: 18px;
+    color: aliceblue;
+    margin: 14px 0 20px;
+    text-align: center;
+}
+
+
+#btn-data-student,
+#btn-delete,
+#btn-search,
+.btn-search-student,
+#btn-save-student,
+.button-add-student,
+.massage-button,
+.display-right,
+.display-left {
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #05092b;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+#btn-search:hover,
+ #btn-data-student:hover,
+.btn-search-student:hover,
+.button-add-student:hover,
+.massage-button:hover,
+.display-right:hover,
+.display-left:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+}
+
+.display-left,
+.display-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+   
+}
+
+.display-left {
+    left: 10px;
+}
+
+.display-right {
+    right: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 122px;
+    margin-top: 19px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.information-student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.information-student input {
+    background-color: rgb(227, 230, 221);
+    width: 100%;
+    height: 33px;
+    border: none;
+    margin: 5px;
+
+}
+.search-student-with-name{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+#delete-student-with-name,
+#searchstudent{
+ 
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #05092b;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid transparent;
+
+}
+
+
+
+.pins-student {
+    font-size: 40px;
+    background-color: #a7cff5;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 30%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+  }
+  
+  label {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 30px;
+  }
+  
+  
+  .pens-check label {
+    margin-right: 15px;
+    font-size: 30px;
+    color: #333;
+  }
+  #box{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  #red{
+    background-color: red;
+    color: #05092b;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  text-align: center;
+  margin-bottom: 32px;
+  }#blue{
+    background-color: rgb(0, 34, 255);
+    color: #05092b;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    margin-bottom: 32px;
+    text-align: center;
+    
+  }
+  
+  #sub {
+    height: 60px;
+    width: 200px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 150px;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  #sub:hover {
+    background-color: #0056b3;
+  }
+  
+#students{
+    height: 40px;
+    width:190px ;
+    font-size: 30px;
+}
